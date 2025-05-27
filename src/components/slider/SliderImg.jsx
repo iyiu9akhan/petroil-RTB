@@ -32,26 +32,26 @@ function SliderImg() {
   return (
     <div className="overflow-hidden mb-[28px]">
       <Slider {...settings}>
-        <div className="px-[10px]">
-          <img src={slider_one} alt="#" />
+        <div >
+          <img src={slider_one} alt="#" className="w-[175px] h-[175px] md:w-[458px] md:h-[426px]"/>
         </div>
-        <div className="px-[10px]"> 
-          <img src={slider_two} alt="#" />
+        <div > 
+          <img src={slider_two} alt="#" className="w-[175px] h-[175px] md:w-[458px] md:h-[426px]"/>
         </div>
-        <div className="px-[10px]">
-          <img src={slider_three} alt="#" />
+        <div >
+          <img src={slider_three} alt="#" className="w-[175px] h-[175px] md:w-[458px] md:h-[426px]"/>
         </div>
-        <div className="px-[10px]">
-          <img src={slider_four} alt="#" />
+        <div >
+          <img src={slider_four} alt="#" className="w-[175px] h-[175px] md:w-[458px] md:h-[426px]"/>
         </div>
-        <div className="px-[10px]">
-          <img src={slider_one} alt="#" />
+        <div >
+          <img src={slider_one} alt="#" className="w-[175px] h-[175px] md:w-[458px] md:h-[426px]"/>
         </div>
-        <div className="px-[10px]">
-          <img src={slider_five} alt="#" />
+        <div >
+          <img src={slider_five} alt="#" className="w-[175px] h-[175px] md:w-[458px] md:h-[426px]"/>
         </div>
-        <div className="px-[10px]">
-          <img src={slider_three} alt="#" />
+        <div >
+          <img src={slider_three} alt="#" className="w-[175px] h-[175px] md:w-[458px] md:h-[426px]"/>
         </div>
       </Slider>
     </div>
