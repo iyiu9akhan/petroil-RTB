@@ -5,6 +5,8 @@
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
 
+
+
 @theme {
   --font-primary: "Poppins", sans-serif;
   --color-white: #ffffff;
