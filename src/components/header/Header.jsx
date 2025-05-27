@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import Container from "../layout/Container";
 import header_logo from "../../assets/header_logo.png";
+import { RxCross2 } from "react-icons/rx";
+import Button from "../layout/button";
 
 function Header() {
+  const [isOpen, setOpen] = useState(false);
+  const toggle = () => {
+    setOpen(!isOpen);
+  };
+
   return (
     <div className="py-[30px] bg-red">
       <Container>
@@ -34,40 +41,48 @@ function Header() {
               >
                 Login
               </a> */}
-              <a
+              {/* <a
                 href="#"
                 className=" capitalize text-white border-2  hidden md:block  font-medium  text-sm px-[30px] py-[13px] md:px-5 md:py-2.5 focus:outline-none "
               >
                 contact
-              </a>
+              </a> */}
+             <Button className="hidden md:block">contact</Button>
               <button
+                onClick={toggle}
                 data-collapse-toggle="mega-menu"
                 type="button"
                 className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden"
                 aria-controls="mega-menu"
-                aria-expanded="false"
+                aria-expanded={isOpen}
               >
                 <span className="sr-only">Open main menu</span>
-                <svg
-                  className="w-5 h-5"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 17 14"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M1 1h15M1 7h15M1 13h15"
-                  />
-                </svg>
+                {isOpen ? (
+                  <RxCross2 size={25} className="cursor-pointer"/>
+                ) : (
+                  <svg
+                    className="w-5 h-5 cursor-pointer"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 17 14"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M1 1h15M1 7h15M1 13h15"
+                    />
+                  </svg>
+                )}
               </button>
             </div>
             <div
               id="mega-menu"
-              className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+              className={`items-center justify-between ${
+                isOpen ? "block" : "hidden"
+              } w-full md:flex md:w-auto md:order-1`}
             >
               <ul className="flex flex-col mt-4 font-medium md:flex-row md:mt-0 md:space-x-8 rtl:space-x-reverse">
                 <li>
@@ -110,14 +125,13 @@ function Header() {
                       <ul
                         className="space-y-4 text-black"
                         aria-labelledby="mega-menu-dropdown-button"
-                        
                       >
                         <li>
                           <a
                             href="#"
                             // className="text-black"
                           >
-                            About Us
+                            Creative Layout
                           </a>
                         </li>
                         <li>
@@ -125,7 +139,7 @@ function Header() {
                             href="#"
                             // className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
                           >
-                            Library
+                            Company History
                           </a>
                         </li>
                         <li>
@@ -133,7 +147,7 @@ function Header() {
                             href="#"
                             // className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
                           >
-                            Resources
+                            Careers
                           </a>
                         </li>
                         <li>
@@ -141,7 +155,7 @@ function Header() {
                             href="#"
                             // className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
                           >
-                            Pro Version
+                            Branding
                           </a>
                         </li>
                       </ul>
@@ -153,7 +167,7 @@ function Header() {
                             href="#"
                             // className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
                           >
-                            Blog
+                            Hosting
                           </a>
                         </li>
                         <li>
@@ -161,7 +175,7 @@ function Header() {
                             href="#"
                             // className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
                           >
-                            Newsletter
+                            Categories
                           </a>
                         </li>
                         <li>
@@ -169,7 +183,7 @@ function Header() {
                             href="#"
                             // className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
                           >
-                            Playground
+                            Shortcodes
                           </a>
                         </li>
                         <li>
@@ -177,7 +191,7 @@ function Header() {
                             href="#"
                             // className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
                           >
-                            License
+                            User Stories
                           </a>
                         </li>
                       </ul>
@@ -189,7 +203,7 @@ function Header() {
                             href="#"
                             // className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
                           >
-                            Contact Us
+                            Map Location
                           </a>
                         </li>
                         <li>
@@ -197,7 +211,7 @@ function Header() {
                             href="#"
                             // className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
                           >
-                            Support Center
+                           404 Error
                           </a>
                         </li>
                         <li>
@@ -205,7 +219,7 @@ function Header() {
                             href="#"
                             // className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
                           >
-                            Terms
+                           Social Login
                           </a>
                         </li>
                       </ul>
