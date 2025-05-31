@@ -11,7 +11,7 @@ function Banner() {
           <h1 className="font-primary font-bold text-[30px] md:text-[64px] text-white max-w-[485px] md:max-w-[842px] mb-[30px]">
             We exist since 1975 on the oil and gas industry.
           </h1>
-          <Button className="w-[186px] bg-red border-none block cursor-pointer">learn more</Button>
+          <Button className=" bg-red border-none block cursor-pointer">learn more</Button>
         </div>
       </Container>
     </div>

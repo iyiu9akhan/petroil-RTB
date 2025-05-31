@@ -1,11 +1,11 @@
 import React from "react";
 
-function Button({children, className}) {
+function Button({ children, className}) {
   return (
     <div>
       <button
-        href="#"
-        className={ `capitalize text-white border-2   font-medium  text-lg w-[142px] h-[51px] focus:outline-none ${className}` }
+       
+        className={`capitalize text-white border-2 font-medium  text-lg w-[100px] h-[40px] md:w-[142px] md:h-[51px] focus:outline-none ${className}`}
       >
         {children}
       </button>
