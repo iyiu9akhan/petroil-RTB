@@ -13,40 +13,12 @@ function Header() {
   return (
     <div className="py-[30px] bg-red">
       <Container>
-        {/* <div className="flex justify-between items-center ">
-          <img src={header_logo} alt="#header_logo" />
-          <div className="flex gap-[72px] items-center">
-            <ul className="capitalize text-white font-primary text-lg font-medium flex gap-[47px]">
-              <a href="#">home</a>
-              <a href="#">about</a>
-              <a href="#">services</a>
-              <a href="#">gallery</a>
-              <a href="#">blog</a>
-            </ul>
-            <button className="font-primary text-lg font-semibold capitalize text-white border-2 py-[13px] px-[30px] cursor-pointer">
-              contact
-            </button>
-          </div>
-        </div> */}
-
         <nav>
           <div className="flex flex-wrap items-center justify-between">
             <a href="#">
               <img src={header_logo} alt="#" />
             </a>
             <div className="flex items-center md:order-2 space-x-1 md:space-x-2 rtl:space-x-reverse">
-              {/* <a
-                href="#"
-                className="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"
-              >
-                Login
-              </a> */}
-              {/* <a
-                href="#"
-                className=" capitalize text-white border-2  hidden md:block  font-medium  text-sm px-[30px] py-[13px] md:px-5 md:py-2.5 focus:outline-none "
-              >
-                contact
-              </a> */}
              <Button className="hidden md:block">contact</Button>
               <button
                 onClick={toggle}
@@ -137,7 +109,6 @@ function Header() {
                         <li>
                           <a
                             href="#"
-                            // className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
                           >
                             Company History
                           </a>
@@ -145,7 +116,6 @@ function Header() {
                         <li>
                           <a
                             href="#"
-                            // className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
                           >
                             Careers
                           </a>
@@ -153,7 +123,6 @@ function Header() {
                         <li>
                           <a
                             href="#"
-                            // className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
                           >
                             Branding
                           </a>
@@ -165,7 +134,6 @@ function Header() {
                         <li>
                           <a
                             href="#"
-                            // className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
                           >
                             Hosting
                           </a>
@@ -173,7 +141,6 @@ function Header() {
                         <li>
                           <a
                             href="#"
-                            // className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
                           >
                             Categories
                           </a>
@@ -181,7 +148,6 @@ function Header() {
                         <li>
                           <a
                             href="#"
-                            // className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
                           >
                             Shortcodes
                           </a>
@@ -189,7 +155,6 @@ function Header() {
                         <li>
                           <a
                             href="#"
-                            // className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
                           >
                             User Stories
                           </a>
@@ -201,7 +166,6 @@ function Header() {
                         <li>
                           <a
                             href="#"
-                            // className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
                           >
                             Map Location
                           </a>
@@ -209,7 +173,6 @@ function Header() {
                         <li>
                           <a
                             href="#"
-                            // className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
                           >
                            404 Error
                           </a>
@@ -217,7 +180,6 @@ function Header() {
                         <li>
                           <a
                             href="#"
-                            // className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
                           >
                            Social Login
                           </a>

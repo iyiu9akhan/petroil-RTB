@@ -3,6 +3,8 @@ import About from './components/about/About'
 import Banner from './components/banner/Banner'
 import Blog from './components/blog/Blog'
 import Brands from './components/brands/brands'
+import Contact from './components/contact/Contact'
+import Footer from './components/footer/Footer'
 import Header from './components/header/Header'
 import Map from './components/map/Map'
 import Services from './components/services/Services'
@@ -14,16 +16,18 @@ function App() {
   
   return (
     <>
-     <HeaderSocial></HeaderSocial>
-     <Header></Header>
-     <Banner></Banner>
-     <Welcome></Welcome>
-     <Slider></Slider>
-     <Services></Services>
-     <About></About>
-     <Brands></Brands>
-     <Blog></Blog>
-     <Map></Map>
+     <HeaderSocial/>
+     <Header/>
+     <Banner/>
+     <Welcome/>
+     <Slider/>
+     <Services/>
+     <About/>
+     <Brands/>
+     <Blog/>
+     <Map/>
+     <Contact/>
+     <Footer/>
     </>
   )
 }
