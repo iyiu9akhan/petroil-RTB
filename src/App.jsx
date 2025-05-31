@@ -4,6 +4,7 @@ import Banner from './components/banner/Banner'
 import Blog from './components/blog/Blog'
 import Brands from './components/brands/brands'
 import Header from './components/header/Header'
+import Map from './components/map/Map'
 import Services from './components/services/Services'
 import Slider from './components/slider/SliderImg'
 import HeaderSocial from './components/top_header/HeaderSocial'
@@ -22,6 +23,7 @@ function App() {
      <About></About>
      <Brands></Brands>
      <Blog></Blog>
+     <Map></Map>
     </>
   )
 }

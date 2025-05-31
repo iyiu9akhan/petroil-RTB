@@ -7,9 +7,9 @@ import brand_four from '../../assets/brands/brand_four.png'
 
 function Brands() {
   return (
-    <div className='my-[117px]'>
+    <div className='my-[60px] md:my-[117px]'>
         <Container>
-            <div className='flex justify-between'>
+            <div className='grid grid-cols-2 gap-y-8 md:flex justify-between'>
                 <div>
                     <img src={brand_one} alt="brand_one_logo" />
                 </div>
