@@ -12,7 +12,7 @@ function About() {
               Learn more about our company
             </h2>
           </div>
-          <div className="bg-[url('./src/assets/about/about_bg.png')] w-[65%] bg-no-repeat bg-cover bg-center flex items-center justify-center">
+          <div className="bg-[url('../src/assets/about/about_bg.png')] w-[65%] bg-no-repeat bg-cover bg-center flex items-center justify-center">
             <Button className='cursor-pointer bg-white border-none !text-red text-[14px] md:text-base'>learn more</Button>
           </div>
         </div>
