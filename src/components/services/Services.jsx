@@ -4,7 +4,7 @@ import Button from "../layout/button";
 
 function Services() {
   return (
-    <div className="mb-[136px]">
+    <div>
       <div className="md:flex justify-end ">
         <div className="md:w-[509px] md:mr-[61px] flex flex-col justify-center mb-[20px] md:mb-0">
           <h1 className="font-primary font-bold text-[35px] text-center md:text-left md:text-[64px] text-black">
@@ -33,7 +33,7 @@ function Services() {
             learn more
           </Button>
         </div>
-        <div className="py-[15px] md:py-0 bg-[url('./src/assets/services/services_three.png')] w-full md:w-1/2 bg-cover bg-no-repeat relative before:content-[''] before:absolute before:inset-0 before:bg-black/60 flex flex-col items-center mb-[20px] md:mb-0">
+        <div className="py-[15px] md:py-0 bg-[url('./src/assets/services/services_three.png')] w-full md:w-1/2 bg-cover bg-no-repeat relative before:content-[''] before:absolute before:inset-0 before:bg-black/60 flex flex-col items-center">
           <h2 className="font-primary font-bold text-[23px] md:text-[36px] text-white md:mt-[147px] text-center md:text-left md:ml-[116px]  mb-[19px] relative">
             National fuel distribution and supply.
           </h2>
